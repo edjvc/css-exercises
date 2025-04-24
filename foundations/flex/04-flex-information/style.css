@@ -1,5 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* 可作用到body底下的所有text content */
+  text-align: center;
 }
 
 img {
@@ -10,6 +12,27 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* 設定body {text-align: center;} 就不用flex操作了 */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item {
+  /* 如果只是為了滿足此case 有.item (block) 把元素框住就不用flex了 */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  /* 沒搞懂為什麼用max-width而不是width 此例實作上似乎沒差 */
+  /* width: 200px; */
+  max-width: 200px;
 }
 
 /* do not edit this footer */
