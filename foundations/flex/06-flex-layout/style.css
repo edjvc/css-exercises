@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   /* solution的方法是.content設定flex: 1, justify-content:center
-  我的方法是這個 實測結果一樣 但solution的方法更保險 */
+  我的方法是這個 此例中實測結果一樣 但solution的方法更泛用 */
   /* justify-content: space-between; */
 }
 
